@@ -1,4 +1,5 @@
 court_id,case_name,date_filed,date_terminated,judge,docket_number,defendant_type,outcome_class,duration_days,pre_or_post_doj
+txsb,Cunningham v. US Department of Education,2026-04-27,,,,,,,post
 pamb,Lewis v. Department of Education,2026-04-27,,,,,,,post
 ohnb,MCKeever v. United States Department of Education,2026-04-27,,,,,,,post
 mnb,Ortiz v. US Department of Education,2026-04-27,,,,,,,post
@@ -42,6 +43,7 @@ ctb,Melchiorre v. Department of Education,2026-04-22,,Julie A. Manning,26-05004,
 cob,Sandstead v. United States Department of Education,2026-04-22,,Joseph G. Rosania Jr.,26-01109,doe,pending,,post
 cacb,Albright v. UNITED STATES DEPARTMENT OF EDUCATION,2026-04-22,,Magdalena Reyes Bordeaux,6:26-ap-01029,doe,pending,,post
 cacb,Bonilla v. UNITED STATES DEPARTMENT OF EDUCATION,2026-04-22,,Scott H. Yun,6:26-ap-01030,doe,pending,,post
+txsb,Williams v. Aidvantage,2026-04-21,,,,,,,post
 innb,Morse v. US Department of Education,2026-04-21,,,,,,,post
 vaeb,Smalls v. UNITED STATES DEPARTMENT OF EDUCATION,2026-04-21,,Stephen C. St. John,26-05003,doe,pending,,post
 txwb,Medina v. U.S. Department of Education,2026-04-21,,,26-03005,doe,pending,,post
@@ -502,6 +504,7 @@ mieb,Shivers v. US Department of Education,2026-02-10,,Daniel S. Opperman.BayCit
 mdb,Allen v. U.S. DEPARTMENT OF EDUCATION,2026-02-10,,Maria Ellena Chavez-Ruark,26-00022,doe,pending,,post
 hib,Grennier v. United States Department of Education,2026-02-10,,,26-90006,doe,pending,,post
 flsb,Fountain v. United States Department of Education,2026-02-10,,Scott M Grossman,26-01047,doe,pending,,post
+vaeb,Wesson v. Dept of Ed/Aidvantage,2026-02-09,,,,,,,post
 caeb,Hernandez v. Aidvantage,2026-02-09,,,,,,,post
 vaeb,Ononiwu v. U.S. Department of Education,2026-02-09,,,26-01004,doe,pending,,post
 txsb,Clark v. Nelnet,2026-02-09,,Jeff Bohm,26-03037,nelnet,pending,,post
@@ -735,6 +738,7 @@ tnmb,WORDLOW v. DEPARTMENT OF EDUCATION,2025-12-03,,Randal S Mashburn,3:25-ap-90
 miwb,Jones-Williamson v. United States Department of Education,2025-12-03,,Scott W. Dales,25-80072,doe,pending,,post
 flsb,Morse v. United States Department of Education,2025-12-03,,Mindy A Mora,25-01396,doe,pending,,post
 cob,Hernandez v. United States Department of Education,2025-12-03,,Thomas B. McNamara,25-01353,doe,pending,,post
+vaeb,Chevres v. Aidvantage,2025-12-02,,,,,,,post
 ncmb,"Poteat v. Nelnet Servicing, LLC",2025-12-02,,,,,,,post
 wiwb,Dowdy v. Department of Education,2025-12-02,,,3-25-00044,doe,pending,,post
 wawb,Reynolds v. Nelnet,2025-12-02,,Mary Jo Heston,25-04072,nelnet,pending,,post
@@ -764,6 +768,7 @@ nyeb,Pierce v. United States Department Of Education,2025-11-20,,Elizabeth S. St
 laeb,Ferrier v. Department of Education Great Lakes,2025-11-20,,Meredith S. Grabill,25-01068,doe,pending,,post
 txeb,Raney v. United States Department of Education,2025-11-19,,Brenda T. Rhoades,25-04092,doe,pending,,post
 flnb,Robell v. Department of Education,2025-11-18,,,25-04009,doe,pending,,post
+txwb,Pettis v. Aidvantage- Federal Student Aid Loan Svcg,2025-11-17,2026-01-21,,,,,,post
 insb,Brown v. MOHELA,2025-11-17,,,,,,,post
 ianb,Gardner v. US Department of Education,2025-11-17,,Thad J. Collins,25-09137,doe,pending,,post
 paeb,Jackson v. Department of Education,2025-11-14,,Patricia M. Mayer,25-00231,doe,pending,,post
@@ -1097,6 +1102,7 @@ lawb,"Blanchard v. Department of Education, United States of America",2025-05-19
 flnb,Anderson v. United States Department of Education,2025-05-19,,,25-01001,doe,pending,,post
 pamb,Zimmerman v. Department of Education Loan Services,2025-05-14,,Henry W. Van Eck,1:25-ap-00025,doe,pending,,post
 iasb,"Wing, II v. US Department of Education",2025-05-13,,,25-30014,doe,pending,,post
+wvsb,Moore v. EdFinancial Services,2025-05-12,,,,,,,post
 idb,Throckmorton v. U.S. Department of Education,2025-05-12,,,25-08008,doe,stale_abandoned,,post
 alsb,Watson v. U.S. Department of Education,2025-05-12,,JERRY C. OLDSHUE,25-01018,doe,stale_abandoned,,post
 moeb,Logan v. United States Department of Education,2025-05-08,,,,,,,post
@@ -1586,6 +1592,16 @@ wyb,Nation v. Great Lakes,2019-03-04,2019-08-09,Cathleen D. Parker,19-02004,othe
 ncmb,McLaurin v. US Department of Education,2019-02-21,2019-05-07,,,,,,pre
 vtb,Gears v. United States Department of Education,2019-01-17,2019-10-31,Colleen A. Brown,19-01001,doe,litigated,287,pre
 meb,Hunter v. US Department of Education,2019-01-16,2019-04-26,Michael A. Fagone,19-01001,doe,settled_or_dismissed,100,pre
+mieb,Michigan Department of Education v. Walker,2019-01-14,2019-03-07,,,,,,pre
+moeb,Oberlander v. Dept of Education/Nelnet,2019-01-11,2019-08-28,,,,,,pre
+flnb,"Maddox v. Nelnet, Inc.",2019-01-10,2019-06-04,,,,,,pre
+mdb,Hubbard v. Navient/ Department of Education Loan Servicing,2019-01-08,2019-05-07,,,,,,pre
+kywb,Gilbert v. Navient Private Credit,2019-01-07,2019-06-25,,,,,,pre
+wawb,Shannon v. Navient Corporation,2019-01-07,2019-02-25,,,,,,pre
+ohnb,Edison v. Sallie Mae Bank,2019-01-04,2019-06-20,,,,,,pre
+caeb,Quiroz v. United States Department of Education,2019-01-04,2019-08-19,,,,,,pre
+txnb,Williams v. U.S. Department of Education,2019-01-03,2020-04-03,,,,,,pre
+ohsb,"Hicks v. Nelnet, Inc",2019-01-02,2020-09-24,,,,,,pre
 sdb,Estrada v. United States Department of Education,2018-12-13,2019-09-24,"Charles L. Nail, Jr.",18-04012,doe,litigated,285,pre
 wvnb,Stradwick v. U. S. Department of Education,2018-12-09,2019-10-04,,5:18-ap-00055,doe,litigated,299,pre
 wyb,Katzl v. United States Department of Education,2018-09-24,2019-12-17,Cathleen D. Parker,18-02033,doe,litigated,449,pre
@@ -1625,6 +1641,19 @@ nhb,"Boyle v. Navient Solutions, Inc.",2015-05-07,2015-08-10,,15-01027,navient,s
 lawb,Smith v. United States Department of Education,2015-05-04,2016-06-14,Jeffrey P. Norman,15-03008,doe,litigated,407,pre
 wyb,Cyrus v. Department of Education,2015-04-20,2015-11-12,Cathleen D. Parker,15-02010,doe,litigated,206,pre
 wyb,Martin v. ECMC,2015-03-26,2016-11-21,Cathleen D. Parker,15-02008,ecmc,litigated,606,pre
+innb,"Seifert, Trustee v. U.S. Department of Education",2015-01-15,2015-06-24,,,,,,pre
+caeb,Johnson v. United States Department of Education,2015-01-14,2015-04-02,,,,,,pre
+ctb,Brooks v. Department of Education/FedLoan Servicing,2015-01-13,2015-05-08,,,,,,pre
+moeb,Swinehart v. Navient Solutions Inc,2015-01-13,2015-02-26,,,,,,pre
+ganb,Guyton v. U.S. Department Of Education,2015-01-13,2016-03-28,,,,,,pre
+cacb,Simoni v. Sallie Mae Inc,2015-01-13,2015-07-22,,,,,,pre
+nmb,Gillespie v. United States Department of Education,2015-01-12,2015-08-04,,,,,,pre
+flsb,Shuffain v. U.S. Department of Education,2015-01-12,2015-04-27,,,,,,pre
+alnb,Patton v. US Department of Education/Gsl/Atl,2015-01-09,2015-02-13,,,,,,pre
+cacb,Armstrong v. U.S. Department of Education,2015-01-09,2015-02-27,,,,,,pre
+mab,Schatz v. US Department Of Education,2015-01-07,2019-10-23,,,,,,pre
+cacb,"Clark v. SLM CORPORATION aka SALLIE MAE, INC.",2015-01-06,2015-05-22,,,,,,pre
+mab,Romero v. U.S Department of Education,2015-01-05,2015-04-22,,,,,,pre
 rib,Hamlin v. US Department of Education,2014-12-08,2015-08-27,Diane Finkle,1:14-ap-01034,doe,litigated,262,pre
 wyb,Royal v. Great Lakes Higher Education Guaranty Corp.,2014-10-30,2015-01-06,Peter J. McNiff,14-02031,great_lakes,settled_or_dismissed,68,pre
 msnb,Watkins v. U.S. Department of Education,2014-07-09,2015-03-31,Jason D. Woodard,14-01053,doe,litigated,265,pre
@@ -1675,7 +1704,14 @@ akb,Horner v. U.S. Department of Education,2008-05-02,2009-12-29,Donald MacDonal
 rib,Boucher v. US Department of Education,2008-03-19,2009-01-02,Arthur N. Votolato,1:08-ap-01016,doe,litigated,289,pre
 akb,Horwitz v. U S Department of Education,2008-02-15,2008-03-11,Donald MacDonald IV,08-90005,doe,quick_dismiss,25,pre
 wyb,Francis v. United States Department of Education,2008-02-01,2008-12-23,Peter J. McNiff,08-02006,doe,litigated,326,pre
+wawb,Gillette v. Sallie Mae Servicing,2008-01-25,2008-11-13,,,,,,pre
+idb,Fister v. Sallie Mae,2008-01-24,2009-01-22,,,,,,pre
+njb,Hundley v. US Department of Education,2008-01-23,2009-07-31,,,,,,pre
+paeb,Ornstein v. U.S. Department of Education,2008-01-21,2008-07-22,,,,,,pre
+vaeb,Holman v. U.S. Department of Education,2008-01-18,2008-05-15,,,,,,pre
+ianb,"Burgess v. U.S. Department of Education, William D. Ford Fede",2008-01-17,2009-04-03,,,,,,pre
 wyb,Francis v. United States Department of Education,2007-11-14,2008-02-05,Peter J. McNiff,07-02058,doe,settled_or_dismissed,83,pre
+wyb,Francis v. United States Department of Education,2007-06-29,2007-11-16,,,,,,pre
 wyb,"Francis v. Sallie Mae, Inc.",2007-06-29,2008-06-23,Peter J. McNiff,07-02038,sallie_mae,litigated,360,pre
 wyb,Radloff-Francis v. U.S. Department of Education,2007-06-29,2007-11-16,Peter J. McNiff,07-02037,doe,settled_or_dismissed,140,pre
 rib,Robinson v. US Department of Education,2006-12-21,2010-12-28,Arthur N. Votolato,1:06-ap-01098,doe,litigated,1468,pre
