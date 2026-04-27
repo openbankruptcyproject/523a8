@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://523a8.openbankruptcyproject.org/sitemap.xml
