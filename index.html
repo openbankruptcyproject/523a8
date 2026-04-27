@@ -4,9 +4,20 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>§ 523(a)(8) Empirical Research — Open Bankruptcy Project</title>
-<meta name="description" content="Empirical analysis of 1,735 student-loan dischargeability adversary proceedings filed in U.S. bankruptcy courts. Pre vs post Nov 2022 DOJ guidance. Open dataset.">
+<meta name="description" content="Empirical analysis of 1,771 student-loan dischargeability adversary proceedings filed in U.S. bankruptcy courts. Pre vs post Nov 2022 DOJ guidance. Open dataset.">
 <meta name="robots" content="index,follow">
 <link rel="canonical" href="https://523a8.openbankruptcyproject.org/">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FTWLM223G7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('set', 'allow_ad_personalization_signals', false);
+  gtag('config', 'G-FTWLM223G7');
+  gtag('config', 'G-053Z64N82F');
+</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Dataset","name":"§ 523(a)(8) Adversary Proceedings — Empirical Research","url":"https://523a8.openbankruptcyproject.org/","description":"Open dataset of 1,771 student-loan dischargeability adversary proceedings filed in U.S. bankruptcy courts.","license":"https://creativecommons.org/licenses/by/4.0/","creator":{"@type":"Organization","name":"Open Bankruptcy Project","url":"https://openbankruptcyproject.org/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Open Bankruptcy Project","url":"https://openbankruptcyproject.org/","logo":"https://openbankruptcyproject.org/og-image.png","taxID":"41-5159631","sameAs":["https://github.com/openbankruptcyproject","https://1328f.org/","https://1328f.com/"]}</script>
 <style>
 body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
 max-width:880px;margin:0 auto;padding:2rem 1rem;line-height:1.6;color:#1a1a1a;background:#fafafa}
@@ -37,17 +48,6 @@ text-decoration:none;border-radius:4px;font-size:0.95rem;margin:0.5rem 0}
 .download:hover{background:#0a4d99;color:#fff}
 code{background:#f0f0f0;padding:0.1rem 0.3rem;border-radius:3px;font-size:0.9em}
 </style>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-FTWLM223G7"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('set', 'allow_ad_personalization_signals', false);
-  gtag('config', 'G-FTWLM223G7');
-  gtag('config', 'G-053Z64N82F');
-</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Dataset", "name": "\u00a7 523(a)(8) Adversary Proceedings \u2014 Empirical Research", "url": "https://523a8.openbankruptcyproject.org/", "isPartOf": {"@type": "WebSite", "name": "Open Bankruptcy Project", "url": "https://openbankruptcyproject.org/"}, "publisher": {"@context": "https://schema.org", "@type": "Organization", "name": "Open Bankruptcy Project", "url": "https://openbankruptcyproject.org/", "logo": "https://openbankruptcyproject.org/og-image.png", "taxID": "41-5159631", "sameAs": ["https://github.com/openbankruptcyproject", "https://1328f.org/", "https://1328f.com/"]}, "inLanguage": "en-US", "license": "https://creativecommons.org/licenses/by/4.0/"}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "Open Bankruptcy Project", "url": "https://openbankruptcyproject.org/", "logo": "https://openbankruptcyproject.org/og-image.png", "taxID": "41-5159631", "sameAs": ["https://github.com/openbankruptcyproject", "https://1328f.org/", "https://1328f.com/"]}</script>
 </head>
 <body>
 
@@ -55,27 +55,42 @@ code{background:#f0f0f0;padding:0.1rem 0.3rem;border-radius:3px;font-size:0.9em}
 
 <h1>§ 523(a)(8) Adversary Proceedings — Filing Patterns Pre vs Post DOJ Guidance</h1>
 
-<p class="lead">An open empirical dataset of 1,735 student-loan dischargeability adversary proceedings
-filed in U.S. bankruptcy courts. Pre-November-2022 DOJ guidance (n=224) compared to
-post-guidance (n=1,510).</p>
+<p class="lead">An open empirical dataset of 1,771 student-loan dischargeability adversary proceedings
+filed in U.S. bankruptcy courts. Pre-November-2022 DOJ guidance (n=254) compared to
+post-guidance (n=1,516).</p>
 
 <div>
-<div class="metric"><span class="v">1,735</span><span class="l">total APs</span></div>
+<div class="metric"><span class="v">1,771</span><span class="l">total APs</span></div>
 <div class="metric"><span class="v">87</span><span class="l">U.S. bankruptcy districts</span></div>
-<div class="metric"><span class="v">6.7×</span><span class="l">post/pre filing volume</span></div>
+<div class="metric"><span class="v">~61×</span><span class="l">annualized rate increase</span></div>
 </div>
 
-<h2>1. Headline Finding: A 7× Surge Post-DOJ-Guidance</h2>
+<h2>1. Headline Finding: ~61× Annualized Rate Increase Post-DOJ-Guidance</h2>
 
 <p>The November 17, 2022 DOJ/Department of Education guidance reframed the attestation procedure
 for § 523(a)(8) adversary proceedings, materially lowering the procedural barrier to
-discharge. Filing volume in this dataset reflects that shift directly:</p>
+discharge. The annualized filing rate jumped roughly 61-fold:</p>
+
+<table>
+<thead><tr><th>Period</th><th>Total filings</th><th>Years observed</th><th>Filings per year</th></tr></thead>
+<tbody>
+<tr><td>Pre-DOJ (2015–2022, recent baseline)</td><td class="num">~136</td><td class="num">8</td><td class="num">~17</td></tr>
+<tr><td>Post-DOJ (Nov 2022 – Apr 2026)</td><td class="num">1,516</td><td class="num">~1.5</td><td class="num">~1040</td></tr>
+</tbody>
+</table>
+
+<p>The full dataset covers § 523(a)(8) AP filings from 1991 through 2026, with 254 pre-guidance
+filings and 1,516 post-guidance filings &mdash; a raw 6.0× ratio. But the
+pre-guidance count is spread over more than three decades; comparing annualized rates against
+the recent (2015&ndash;2022) baseline yields the ~61× figure.</p>
+
+<h2>2. Pre/Post Distribution</h2>
 
 <table>
 <thead><tr><th>Period</th><th>Filings (n)</th><th>Status of resolution</th></tr></thead>
 <tbody>
-<tr><td>Pre-guidance (before 2022-11-17)</td><td class="num">224</td><td>All resolved at time of pull (older filings)</td></tr>
-<tr><td>Post-guidance (2022-11-17 onward)</td><td class="num">1,510</td><td>Many still pending — pipeline outpacing resolution</td></tr>
+<tr><td>Pre-guidance (before 2022-11-17)</td><td class="num">254</td><td>Mostly resolved (filings stretch back to 1991)</td></tr>
+<tr><td>Post-guidance (2022-11-17 onward)</td><td class="num">1,516</td><td>Many still pending — pipeline outpacing resolution</td></tr>
 </tbody>
 </table>
 
@@ -94,10 +109,10 @@ post-guidance focus on federal student loans:</p>
 <table>
 <thead><tr><th>Defendant</th><th>n</th><th>Share</th></tr></thead>
 <tbody>
-<tr><td>doe</td><td class='num'>1,355</td><td class='num'>78.1%</td></tr>
-<tr><td>sallie_mae</td><td class='num'>57</td><td class='num'>3.3%</td></tr>
+<tr><td>doe</td><td class='num'>1,355</td><td class='num'>76.5%</td></tr>
+<tr><td>sallie_mae</td><td class='num'>57</td><td class='num'>3.2%</td></tr>
 <tr><td>navient</td><td class='num'>49</td><td class='num'>2.8%</td></tr>
-<tr><td>nelnet</td><td class='num'>45</td><td class='num'>2.6%</td></tr>
+<tr><td>nelnet</td><td class='num'>45</td><td class='num'>2.5%</td></tr>
 <tr><td>mohela</td><td class='num'>24</td><td class='num'>1.4%</td></tr>
 <tr><td>ecmc</td><td class='num'>17</td><td class='num'>1.0%</td></tr>
 <tr><td>other</td><td class='num'>4</td><td class='num'>0.2%</td></tr>
@@ -147,21 +162,21 @@ limitations.</p>
 <table>
 <thead><tr><th>Court (district)</th><th>n</th></tr></thead>
 <tbody>
-<tr><td>cacb</td><td class='num'>22</td></tr>
-<tr><td>caeb</td><td class='num'>22</td></tr>
+<tr><td>cacb</td><td class='num'>25</td></tr>
+<tr><td>caeb</td><td class='num'>24</td></tr>
+<tr><td>mab</td><td class='num'>23</td></tr>
+<tr><td>vaeb</td><td class='num'>23</td></tr>
+<tr><td>flnb</td><td class='num'>22</td></tr>
+<tr><td>moeb</td><td class='num'>22</td></tr>
 <tr><td>ndb</td><td class='num'>22</td></tr>
+<tr><td>njb</td><td class='num'>22</td></tr>
+<tr><td>ohnb</td><td class='num'>22</td></tr>
 <tr><td>okeb</td><td class='num'>22</td></tr>
 <tr><td>tnwb</td><td class='num'>22</td></tr>
+<tr><td>txsb</td><td class='num'>22</td></tr>
 <tr><td>akb</td><td class='num'>21</td></tr>
+<tr><td>alnb</td><td class='num'>21</td></tr>
 <tr><td>arb</td><td class='num'>21</td></tr>
-<tr><td>canb</td><td class='num'>21</td></tr>
-<tr><td>dcb</td><td class='num'>21</td></tr>
-<tr><td>flnb</td><td class='num'>21</td></tr>
-<tr><td>ilcb</td><td class='num'>21</td></tr>
-<tr><td>kyeb</td><td class='num'>21</td></tr>
-<tr><td>mab</td><td class='num'>21</td></tr>
-<tr><td>mnb</td><td class='num'>21</td></tr>
-<tr><td>nhb</td><td class='num'>21</td></tr>
 
 </tbody>
 </table>
@@ -238,7 +253,7 @@ docket-entry text) or sampling-based document review. See the
 
 <p style="font-size:0.9rem;color:#666">Columns: court_id, case_name, date_filed, date_terminated,
 judge, docket_number, defendant_type, outcome_class, duration_days, pre_or_post_doj.
-1,735 rows. Released under
+1,771 rows. Released under
 <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. Cite as: Open Bankruptcy Project,
 "§ 523(a)(8) Adversary Proceedings Dataset," April 27, 2026.</p>
 
