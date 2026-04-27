@@ -4,32 +4,252 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>§ 523(a)(8) Empirical Research — Open Bankruptcy Project</title>
-<meta name="description" content="Open dataset of student loan dischargeability adversary proceedings filed in U.S. bankruptcy courts. Filing volume, duration, judge, defendant, and outcome">
+<meta name="description" content="Empirical analysis of 1,552 student-loan dischargeability adversary proceedings filed in U.S. bankruptcy courts. Pre vs post Nov 2022 DOJ guidance. Open dataset.">
 <meta name="robots" content="index,follow">
 <link rel="canonical" href="https://523a8.openbankruptcyproject.org/">
 <style>
 body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
-max-width:760px;margin:0 auto;padding:2rem 1rem;line-height:1.6;color:#1a1a1a;background:#fafafa}
-h1{font-size:1.9rem;line-height:1.2;margin:0 0 1rem}
+max-width:880px;margin:0 auto;padding:2rem 1rem;line-height:1.6;color:#1a1a1a;background:#fafafa}
+h1{font-size:2rem;line-height:1.2;margin:0 0 0.5rem}
+h2{font-size:1.4rem;margin:2.5rem 0 0.7rem;border-bottom:2px solid #0c5cb6;padding-bottom:0.3rem}
+h3{font-size:1.1rem;margin:1.5rem 0 0.5rem}
+.tag{display:inline-block;padding:0.15rem 0.6rem;background:#0c5cb6;color:#fff;
+font-size:0.75rem;border-radius:3px;margin-bottom:1rem}
 .lead{font-size:1.1rem;color:#444;margin:0 0 2rem}
+.metric{display:inline-block;margin-right:2rem;padding:1rem;background:#fff;
+border:1px solid #ddd;border-radius:6px;min-width:140px;text-align:center}
+.metric .v{display:block;font-size:1.7rem;font-weight:700;color:#0c5cb6}
+.metric .l{display:block;font-size:0.8rem;color:#666;margin-top:0.3rem}
+table{width:100%;border-collapse:collapse;margin:1rem 0;background:#fff;
+font-size:0.95rem;border:1px solid #ddd}
+th,td{padding:0.5rem 0.7rem;text-align:left;border-bottom:1px solid #eee}
+th{background:#f0f4f8;font-weight:600}
+.num{text-align:right;font-variant-numeric:tabular-nums}
+.callout{padding:1rem;background:#fff8e0;border-left:4px solid #d4a900;
+margin:1.5rem 0;border-radius:0 4px 4px 0}
+.callout h3{margin:0 0 0.5rem}
+.caveat{padding:1rem;background:#f0f4f8;border-left:4px solid #6b8eaf;
+margin:1.5rem 0;border-radius:0 4px 4px 0;font-size:0.95rem}
 footer{margin-top:3rem;padding-top:1.5rem;border-top:1px solid #ddd;color:#666;font-size:0.9rem}
 a{color:#0c5cb6}
-.tag{display:inline-block;padding:0.15rem 0.6rem;background:#0c5cb6;color:#fff;font-size:0.75rem;border-radius:3px;margin-bottom:1rem}
+.download{display:inline-block;padding:0.5rem 1rem;background:#0c5cb6;color:#fff;
+text-decoration:none;border-radius:4px;font-size:0.95rem;margin:0.5rem 0}
+.download:hover{background:#0a4d99;color:#fff}
+code{background:#f0f0f0;padding:0.1rem 0.3rem;border-radius:3px;font-size:0.9em}
 </style>
 </head>
 <body>
-<span class="tag">Open Bankruptcy Project</span>
-<h1>§ 523(a)(8) Adversary Proceedings — Empirical Research</h1>
-<p class="lead">Open dataset of student loan dischargeability adversary proceedings filed in U.S. bankruptcy courts. Filing volume, duration, judge, defendant, and outcome patterns. Research and methodology hub for empirical analysis of 11 U.S.C. § 523(a)(8).</p>
-<p><strong>Status:</strong> Page under construction. Empirical research and educational content
-in preparation. Check back shortly.</p>
+
+<span class="tag">Open Bankruptcy Project · Empirical Research</span>
+
+<h1>§ 523(a)(8) Adversary Proceedings — Filing Patterns Pre vs Post DOJ Guidance</h1>
+
+<p class="lead">An open empirical dataset of 1,552 student-loan dischargeability adversary proceedings
+filed in U.S. bankruptcy courts. Pre-November-2022 DOJ guidance (n=194) compared to
+post-guidance (n=1,357).</p>
+
+<div>
+<div class="metric"><span class="v">1,552</span><span class="l">total APs</span></div>
+<div class="metric"><span class="v">79</span><span class="l">U.S. bankruptcy districts</span></div>
+<div class="metric"><span class="v">7.0×</span><span class="l">post/pre filing volume</span></div>
+</div>
+
+<h2>1. Headline Finding: A 7× Surge Post-DOJ-Guidance</h2>
+
+<p>The November 17, 2022 DOJ/Department of Education guidance reframed the attestation procedure
+for § 523(a)(8) adversary proceedings, materially lowering the procedural barrier to
+discharge. Filing volume in this dataset reflects that shift directly:</p>
+
+<table>
+<thead><tr><th>Period</th><th>Filings (n)</th><th>Status of resolution</th></tr></thead>
+<tbody>
+<tr><td>Pre-guidance (before 2022-11-17)</td><td class="num">194</td><td>All resolved at time of pull (older filings)</td></tr>
+<tr><td>Post-guidance (2022-11-17 onward)</td><td class="num">1,357</td><td>Many still pending — pipeline outpacing resolution</td></tr>
+</tbody>
+</table>
+
+<div class="callout">
+<h3>The 150 Stale-Abandoned Post-DOJ Cases</h3>
+<p>An additional finding: 150 post-guidance APs in the dataset have no termination date but no docket
+activity for 180+ days. Possible interpretations: settled outside court without a termination order,
+debtor abandoned the proceeding, or awaiting court action that has not come.</p>
+</div>
+
+<h2>2. Defendant Distribution</h2>
+
+<p>The vast majority of APs target the U.S. Department of Education directly, consistent with
+post-guidance focus on federal student loans:</p>
+
+<table>
+<thead><tr><th>Defendant</th><th>n</th><th>Share</th></tr></thead>
+<tbody>
+<tr><td>doe</td><td class='num'>1,355</td><td class='num'>87.3%</td></tr>
+<tr><td>sallie_mae</td><td class='num'>57</td><td class='num'>3.7%</td></tr>
+<tr><td>navient</td><td class='num'>49</td><td class='num'>3.2%</td></tr>
+<tr><td>nelnet</td><td class='num'>45</td><td class='num'>2.9%</td></tr>
+<tr><td>mohela</td><td class='num'>24</td><td class='num'>1.5%</td></tr>
+<tr><td>ecmc</td><td class='num'>17</td><td class='num'>1.1%</td></tr>
+<tr><td>other</td><td class='num'>4</td><td class='num'>0.3%</td></tr>
+<tr><td>great_lakes</td><td class='num'>1</td><td class='num'>0.1%</td></tr>
+
+</tbody>
+</table>
+
+<h2>3. Outcome Distribution</h2>
+
+<p>Outcome classification is heuristic — based on filing/termination dates and last-activity signals,
+not on dispositive-order text. See the <a href="#methodology">methodology</a> section for
+limitations.</p>
+
+<table>
+<thead><tr><th>Outcome class (heuristic)</th><th>n</th><th>Median duration (filed → terminated)</th></tr></thead>
+<tbody>
+<tr><td>pending</td><td class='num'>1,066</td><td class='num'>—</td></tr>
+<tr><td>litigated</td><td class='num'>221</td><td class='num'>—</td></tr>
+<tr><td>stale_abandoned</td><td class='num'>150</td><td class='num'>—</td></tr>
+<tr><td>settled_or_dismissed</td><td class='num'>107</td><td class='num'>—</td></tr>
+<tr><td>quick_dismiss</td><td class='num'>8</td><td class='num'>—</td></tr>
+
+</tbody>
+</table>
+
+<h3>Pre vs Post DOJ × Outcome Cross-Tab</h3>
+
+<table>
+<thead><tr><th>Period</th><th>Outcome class</th><th>n</th></tr></thead>
+<tbody>
+<tr><td>post</td><td>pending</td><td class='num'>1,066</td></tr>
+<tr><td>post</td><td>stale_abandoned</td><td class='num'>149</td></tr>
+<tr><td>post</td><td>litigated</td><td class='num'>85</td></tr>
+<tr><td>post</td><td>settled_or_dismissed</td><td class='num'>55</td></tr>
+<tr><td>post</td><td>quick_dismiss</td><td class='num'>2</td></tr>
+<tr><td>pre</td><td>litigated</td><td class='num'>136</td></tr>
+<tr><td>pre</td><td>settled_or_dismissed</td><td class='num'>52</td></tr>
+<tr><td>pre</td><td>quick_dismiss</td><td class='num'>6</td></tr>
+<tr><td>unknown</td><td>stale_abandoned</td><td class='num'>1</td></tr>
+
+</tbody>
+</table>
+
+<h2>4. Top 15 Districts by AP Volume</h2>
+
+<table>
+<thead><tr><th>Court (district)</th><th>n</th></tr></thead>
+<tbody>
+<tr><td>akb</td><td class='num'>20</td></tr>
+<tr><td>almb</td><td class='num'>20</td></tr>
+<tr><td>alnb</td><td class='num'>20</td></tr>
+<tr><td>alsb</td><td class='num'>20</td></tr>
+<tr><td>arb</td><td class='num'>20</td></tr>
+<tr><td>arwb</td><td class='num'>20</td></tr>
+<tr><td>cacb</td><td class='num'>20</td></tr>
+<tr><td>caeb</td><td class='num'>20</td></tr>
+<tr><td>canb</td><td class='num'>20</td></tr>
+<tr><td>casb</td><td class='num'>20</td></tr>
+<tr><td>cob</td><td class='num'>20</td></tr>
+<tr><td>ctb</td><td class='num'>20</td></tr>
+<tr><td>dcb</td><td class='num'>20</td></tr>
+<tr><td>flmb</td><td class='num'>20</td></tr>
+<tr><td>flnb</td><td class='num'>20</td></tr>
+
+</tbody>
+</table>
+
+<p style="font-size:0.9rem;color:#666">Per-district counts are capped at 20 per the dataset's
+sampling method (latest 20 filings per court). Full historical pulls per court will refine these counts.</p>
+
+<h2>5. Top 15 Judges by AP Volume</h2>
+
+<p>Judges who appear most frequently as the assigned judge on § 523(a)(8) APs in the dataset.
+This list is observational, not evaluative — it reflects volume of cases assigned, not any
+characteristic of those judges' rulings.</p>
+
+<table>
+<thead><tr><th>Judge</th><th>n APs</th></tr></thead>
+<tbody>
+<tr><td>Paul R. Thomas</td><td class='num'>23</td></tr>
+<tr><td>BENJAMIN P. HURSH</td><td class='num'>20</td></tr>
+<tr><td>Thad J. Collins</td><td class='num'>19</td></tr>
+<tr><td>B. McKay Mignault</td><td class='num'>19</td></tr>
+<tr><td>Sarah A. Hall</td><td class='num'>18</td></tr>
+<tr><td>Meredith S. Grabill</td><td class='num'>18</td></tr>
+<tr><td>Paul M. Black</td><td class='num'>17</td></tr>
+<tr><td>Bianca M Rucker</td><td class='num'>16</td></tr>
+<tr><td>Irvin N. Hoyt</td><td class='num'>15</td></tr>
+<tr><td>Brenda T. Rhoades</td><td class='num'>15</td></tr>
+<tr><td>James J. Tancredi</td><td class='num'>14</td></tr>
+<tr><td>Christopher J. Panos</td><td class='num'>14</td></tr>
+<tr><td>Warren, U.S.B.J.</td><td class='num'>13</td></tr>
+<tr><td>Mary P. Gorman</td><td class='num'>13</td></tr>
+<tr><td>Jason D. Woodard</td><td class='num'>13</td></tr>
+
+</tbody>
+</table>
+
+<h2 id="methodology">6. Methodology</h2>
+
+<h3>Data source</h3>
+<p>Adversary proceeding records pulled from the RECAP archive (Free Law Project) via the
+CourtListener API. Search filtered to bankruptcy courts (court IDs ending in <code>b</code>) with
+case names containing <code>v.</code> and a defendant pattern matching student-loan creditors:
+Department of Education, NELNET, Mohela, Navient, Sallie Mae, Great Lakes Higher Education,
+ECMC, Pennsylvania Higher Education Assistance Agency, Edfinancial, Aidvantage.</p>
+
+<h3>Pre/post DOJ classification</h3>
+<p>Cutoff date: November 17, 2022, the publication date of the DOJ/ED revised process for
+attesting to undue hardship in § 523(a)(8) APs.</p>
+
+<h3>Outcome classification (heuristic)</h3>
+<ul>
+<li><strong>pending:</strong> no termination date set; last filing within 180 days</li>
+<li><strong>stale_abandoned:</strong> no termination date; last filing more than 180 days ago</li>
+<li><strong>quick_dismiss:</strong> terminated within 30 days of filing</li>
+<li><strong>settled_or_dismissed:</strong> terminated within 30–180 days</li>
+<li><strong>litigated:</strong> terminated 180+ days after filing</li>
+</ul>
+
+<div class="caveat">
+<strong>Limitations.</strong> Outcome classes are based on temporal signals only, not on the
+content of dispositive orders. Whether a "litigated" case ended in discharge or denial is not
+yet classified in this dataset; resolving that requires either CourtListener premium access (for
+docket-entry text) or sampling-based document review. See the
+<a href="https://github.com/openbankruptcyproject/523a8">repository README</a> for ongoing work.
+</div>
+
+<h3>Date range</h3>
+<p>Filings dated <strong>1994-11-01</strong> through <strong>2026-04-27</strong>.</p>
+
+<h2>7. Open Data</h2>
+
+<p>The full dataset is available as an open CSV download:</p>
+
+<a class="download" href="data.csv">Download data.csv</a>
+
+<p style="font-size:0.9rem;color:#666">Columns: court_id, case_name, date_filed, date_terminated,
+judge, docket_number, defendant_type, outcome_class, duration_days, pre_or_post_doj.
+1,552 rows. Released under
+<a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. Cite as: Open Bankruptcy Project,
+"§ 523(a)(8) Adversary Proceedings Dataset," April 27, 2026.</p>
+
+<h2>8. Open Source</h2>
+
+<p>The pull and classification scripts are public:</p>
+<ul>
+<li><a href="https://github.com/openbankruptcyproject/523a8">openbankruptcyproject/523a8</a>
+— this site + dataset</li>
+<li><a href="https://github.com/openbankruptcyproject">openbankruptcyproject</a> — full Open Bankruptcy
+Project organization (187+ repos)</li>
+</ul>
+
 <footer>
-<p>This page provides general information for educational purposes only. It does not constitute
-legal advice and does not create an attorney-client relationship. For advice on your specific situation,
-consult a licensed bankruptcy attorney in your jurisdiction.</p>
+<p>Last updated April 27, 2026. Methodology and dataset versioned in the public repository.</p>
+<p>This page provides general information for educational and research purposes. It does not
+constitute legal advice and does not create an attorney-client relationship. For advice on a
+specific situation, consult a licensed bankruptcy attorney in the relevant jurisdiction.</p>
 <p><strong>Open Bankruptcy Project</strong> &mdash; a 501(c)(3) public charity (EIN 41-5159631) &mdash;
 empirical research and free tools for federal bankruptcy law.
 <a href="https://openbankruptcyproject.org/">openbankruptcyproject.org</a></p>
 </footer>
+
 </body>
 </html>
